@@ -1,96 +1,436 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --yellow: #fbffa7;
+  --blue: #b1c5ff;
+  --green: #b6ffc0;
+  --orange: #ff764d;
+  --purple: #d5b3ff;
+  --darkblue: #0000ff;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.bg-reset {
+  border: 0;
+  background-color: white;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+.space-y > * {
+  margin-top: 1rem;
 }
 
-.card {
-  padding: 2em;
+.page-about {
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.main-nav nav:first-child {
+  display: flex;
+  border-bottom: 2px solid lightgray;
+  padding: 1rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.main-nav__logo {
+  z-index: 31;
+  position: absolute;
+  top: 1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.main-nav__trigger {
+  z-index: 30;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+  vertical-align: middle;
+}
+
+.main-nav__primary-wrapper {
+  padding-top: 4.375rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  background: var(--darkblue);
+  transition: all 500ms ease;
+  transform: translateY(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.is-expanded {
+  & .main-nav__primary-wrapper {
+    transform: translateY(0%);
+    color: white;
   }
-  a:hover {
-    color: #747bff;
+
+  & .main-nav__link-list {
+    padding-left: 0rem;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+.main-nav__section .main-nav__link-list {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.main-nav__link-list {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.25rem;
+  gap: 1rem;
+}
+
+.main-nav__pt-section .main-nav__link-list {
+  flex-direction: row;
+}
+
+nav > .main-nav__link-list--secondary {
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-nav__link-list__item__more {
+  color: var(--orange);
+}
+
+.main-nav__link-list__item__try {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main-nav__link-list__item__account {
+  font-size: 0.8rem;
+}
+
+.main-nav__link-list--active {
+  color: var(--orange);
+}
+
+.page-about__text > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-about__collage > * {
+  margin: 2rem 0;
+}
+
+.page-about__collage--people .page-about__collage__container > * + * {
+  margin-top: 1rem;
+}
+
+.main-footer {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 80rem) {
+  .space-y > * {
+    margin-top: 0rem;
+  }
+
+  .main-nav nav:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-about {
+    margin-top: 0rem;
+    padding: 0;
+  }
+
+  .main-nav__trigger {
+    display: none;
+  }
+
+  .main-nav__more {
+    position: relative;
+    left: -1rem;
+    margin-top: 1rem;
+  }
+
+  .main-nav__more[aria-hidden="true"] {
+    display: none;
+  }
+
+  .main-nav__more[aria-hidden="false"] {
+    display: block;
+  }
+
+  .main-nav__primary-wrapper {
+    padding-top: 0rem;
+    transform: translateY(0%);
+    background: inherit;
+    position: static;
+    flex: 1;
+  }
+
+  .main-nav__link-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .main-nav__link-list__item__try {
+    color: var(--darkblue);
+    font-size: 1.5rem;
+    margin-left: auto;
+  }
+
+  .main-nav__section .main-nav__link-list {
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  .main-nav__section .main-nav__link-list__item {
+    font-weight: normal;
+  }
+
+  .main-nav__section .main-nav__link-list--secondary {
+    display: none;
+  }
+
+  .page-about__header {
+    min-height: calc(100vh - 120px);
+    background-position: center center;
+    background-size: cover;
+    background-image: url("https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=473&ixjsv=1.1.3&q=50&w=473");
+    margin: 2rem 8vw;
+  }
+
+  .page-about__text {
+    display: grid;
+    margin: 8rem auto;
+    max-width: 50vw;
+  }
+
+  .page-about__collage {
+    position: relative;
+    padding-top: 8.333vw;
+    padding-bottom: 8.333vw;
+  }
+
+  .page-about__collage__media {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .page-about__collage__background {
+    position: absolute;
+    width: 58vw;
+    height: 50vw;
+    left: 41.6vw;
+    top: 0;
+    z-index: -1;
+    background-color: #fbffa7;
+  }
+
+  .page-about__collage--products .page-about__collage__media:nth-of-type(2) {
+    width: 33.33333vw;
+    height: 25vw;
+    margin-left: 8vw;
+  }
+
+  .page-about__collage--products .page-about__collage__media:nth-of-type(1) {
+    width: 41.6666vw;
+    align-self: center;
+    margin-left: 8vw;
+  }
+
+  .page-about__media {
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+
+  .page-about__collage--people .page-about__collage__container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8vw;
+
+    .page-about__collage__media:nth-of-type(1) {
+      width: 33.333vw;
+      height: 25vw;
+      display: block;
+    }
+
+    .page-about__collage__media:nth-of-type(2) {
+      margin-top: 8.333vw;
+      width: 33.333vw;
+      height: 25vw;
+      display: block;
+    }
+  }
+
+  .page-about__collage--people > .page-about__collage__media {
+    display: inline-block;
+    margin-left: 8.333vw;
+    width: 41.6667vw;
+    height: 41.66667vw;
+  }
+
+  .page-about__collage--people > .page-about__collage__background {
+    position: absolute;
+    width: 58vw;
+    height: 75vw;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #b6ffc0;
+  }
+
+  .page-about__collage--people > .page-about__collage__media {
+    display: inline-block;
+    margin-left: 8.333vw;
+    width: 41.6667vw;
+    height: 41.66667vw;
+  }
+
+  .page-about__collage--improving .page-about__collage__media:nth-of-type(2) {
+    display: inline-block;
+    margin-left: 16vw;
+    width: 41vw;
+  }
+
+  .page-about__collage--improving .page-about__collage__media:nth-of-type(1) {
+    display: inline-block;
+    margin-left: 8.333vw;
+    width: 33vw;
+    height: 25vw;
+  }
+
+  .page-about__collage--improving > .page-about__collage__background {
+    position: absolute;
+    width: 66.6667vw;
+    height: 54.333vw;
+    left: 16.666vw;
+    top: 0;
+    transform: translateY(5%);
+    z-index: -1;
+    background-color: #d5b3ff;
+  }
+
+  .page-about__jobs-teaser {
+    margin: 8vw 8vw;
+    display: flex;
+
+    .page-about__jobs-teaser__image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      flex-basis: 50%;
+
+      img {
+        min-height: 100%;
+      }
+    }
+
+    .page-about__jobs-teaser__text {
+      background-color: #b1c5ff;
+      padding: 8.333vw;
+      flex-basis: 50%;
+    }
+
+    .page-about__jobs-teaser__text p {
+      color: var(--darkblue);
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .main-footer {
+    border-top: 2px solid lightgray;
+    padding-bottom: 2rem;
+  }
+
+  .main-footer__container {
+    padding: 0 8.333vw;
+  }
+
+  .main-footer__content {
+    padding-top: 4.333vw;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .main-footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  .main-footer__secondary {
+    margin-top: 2rem;
+  }
+
+  .main-footer__secondary__link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
 }
