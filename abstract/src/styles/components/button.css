@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 10px 22px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.btn__icon {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  padding: 10px 10px;
+  margin-left: 0rem;
+}
+
+.btn__primary {
+  background-color: var(--color-purple-light);
+  color: var(--color-white);
+  border-color: var(--color-purple-light);
+}
+
+.btn__secondary {
+  background-color: var(--color-dark-light);
+  color: var(--color-white);
+  border: 1px solid #fff;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="hc">
+      <header class="topbar container bg-primary">
+        <div class="topbar__logo__wrapper">
+          <a
+            class="topbar__logo"
+            href="https://www.abstract.com/"
+            title="Go to goabstract.com"
+          >
+            <i class="fa-solid fa-web-awesome"></i>
+          </a>
+          <span class="topbar__logo__title"> Abstract </span>
+          <div class="divider"></div>
+          <span class="topbar__logo__title"> Help Center </span>
+        </div>
+
+        <div class="topbar__icons_wrapper">
+          <button class="btn btn__icon btn__toggle-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="btn btn__icon btn__toggle-menu">
+            <i class="fa-solid fa-bars btn__burger"></i>
+	    <i class="fa-solid fa-x btn__close" ></i>
+          </button>
+        </div>
+
+	<div class="topbar__search_box">
+	    <form class="search">
+		    <input type="text" placeholder="Search"></input> 
+		    <i class="fa-solid fa-x" id="search-close"></i>
+	    </form>
+	</div>
+        <div class="topbar__controls">
+          <div class="topbar__control__container">
+          	<a class="btn topbar__submit" href="/">Submit a request</a>
+		<div class="divider--h"></div>
+          	<a class="btn topbar__signin">Sign in</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero container">
+          <div class="hero__content">
+            <h3 class="hero__title">
+              How can we help? <i class="fa-solid fa-arrow-right"></i>
+            </h3>
+	    <form class="hero__search">
+		    <input type="text" placeholder="Search"></input> 
+            <i class="fa-solid fa-magnifying-glass"></i>
+	    </form>
+          </div>
+        </section>
+        <div class="category container">
+          <ul class="category__list">
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h4 class="category__title">Manage your account</h4>
+                <p class="category__description">
+                  Configure your account settings, such as your email, profile
+                  details, and password.
+                </p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h2 class="category__title">
+                  Manage organizations, teams, and projects
+                </h2>
+                <p class="category__description">
+                  Use Abstract organizations, teams, and projects to organize
+                  your people and your work
+                </p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h2 class="category__title">Manage billing</h2>
+                <p class="category__description">
+                  Change subscriptions and payment details.
+                </p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h2 class="category__title">Authenticate to Abstract</h2>
+                <p class="category__description">
+                  Set up and configure SSO, SCIM, and Just-in-Time provisioning
+                </p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h2 class="category__title">Manage your account</h2>
+                <p class="category__description">
+                  Configure your account settings, such as your email, profile
+                  details, and password.
+                </p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="category__item">
+              <div class="category__image">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="category__content">
+                <h2 class="category__title">Abstract support</h2>
+                <p class="category__description">Get in touch with a human.</p>
+                <a class="category__link_more" href="/">
+                  Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="container bg-primary footer">
+        <div class="footer__content">
+          <div class="footer__column">
+            <h3 class="footer__title">Abstract</h3>
+            <ul class="footer__links">
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Start </a>
+              </li>
+
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">Trial</a>
+              </li>
+
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Pricing </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Download </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Resources</h3>
+            <ul class="footer__links">
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">Blog</a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Help </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Center </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Release </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Notes </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Status </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Community</h3>
+            <ul class="footer__links">
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">Twitter</a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Linkedin </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Facebook </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Dribble </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/"> Podcast </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__links">
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">About Us </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">Careers</a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">Legal</a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link--contact" href="/">Contact Us </a>
+              </li>
+              <li class="footer__link__wrapper">
+                <a class="footer__link" href="/">info@abstract.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__logo">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <p class="footer__icon">© Copyright 2024</p>
+          <p class="footer__title">Abstract Studio Design, Inc.</p>
+          <p class="footer__description">All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

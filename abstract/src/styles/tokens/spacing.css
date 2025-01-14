@@ -1,0 +1,15 @@
+:root {
+  /* Base spacing unit (4px) */
+  --space-unit: 0.25rem;
+
+  /* Spacing scale */
+  --space-3xs: calc(var(--space-unit) * 1); /* 4px */
+  --space-2xs: calc(var(--space-unit) * 2); /* 8px */
+  --space-xs: calc(var(--space-unit) * 3); /* 12px */
+  --space-sm: calc(var(--space-unit) * 4); /* 16px */
+  --space-md: calc(var(--space-unit) * 6); /* 24px */
+  --space-lg: calc(var(--space-unit) * 8); /* 32px */
+  --space-xl: calc(var(--space-unit) * 12); /* 48px */
+  --space-2xl: calc(var(--space-unit) * 16); /* 64px */
+  --space-3xl: calc(var(--space-unit) * 20); /* 80px */
+}

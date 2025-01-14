@@ -1,0 +1,6 @@
+/* base/fonts.css */
+@font-face {
+  font-family: "SystemFont";
+  src: local("system-ui");
+  font-display: swap;
+}
