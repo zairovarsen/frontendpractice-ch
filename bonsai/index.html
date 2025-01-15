@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a class="header__logo__wrapper" href="/">
+            <img
+              src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
+            />
+          </a>
+        </div>
+
+	<div class="header__overlay">
+		<div class="header__overlay__container">
+			<nav>
+				<ul class="header__links">
+					<li class="header__link">
+						<span class="header__link__title"> Product </span>		
+						<i class="fa-solid fa-chevron-down"></i>
+					</li>
+					<li class="header__link">
+						<span class="header__link__title">Templates</span>		
+						<i class="fa-solid fa-chevron-down"></i>
+					</li>
+					<li class="header__link">
+						<span class="header__link__title"> Pricing </span>		
+						<i class="fa-solid fa-chevron-down"></i>
+					</li>
+					<li class="header__link">
+						<span class="header__link__title"> Reviews </span>		
+						<i class="fa-solid fa-chevron-down"></i>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="btn-wrapper">
+				<button class="btn btn-secondary">Log in </button>
+				<button class="btn btn-primary">Start free</button>
+			</div>
+		</div>
+	</div>
+
+        <nav class="header__nav">
+
+		<div class="header__controls">
+
+	 <ul class="header__links">
+		<li class="header__link">
+			<a href="/"> Templates </a>
+			<i class="fa-solid fa-chevron-down"></i>
+		</li>
+		<li class="header__link">
+			<a href="/"> Pricing </a>
+		</li>
+		<li class="header__link">
+			<a href="/"> Reviews </a>
+		</li>
+	 </ul>
+
+	 <div class="btn-wrapper">
+		 <button class="btn btn-secondary">Log in </button>
+		 <button class="btn btn-primary">Start free</button>
+	 </div>
+		</div>
+       
+          <div class="header__burger">
+            <div class="header__burger__line"></div>
+            <div class="header__burger__line"></div>
+            <div class="header__burger__line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="plans">
+      <div class="container plans__content">
+        <div class="plans__title">
+          <h1 class="plans__heading">Plans & Pricing</h1>
+          <div class="plans__toggle">
+            <div class="plans__promo">2 month free</div>
+            <span class="plans__period plans__period--monthly"> monthly </span>
+            <label class="switch" htmlFor="custom_switch">
+              <input type="checkbox" class="switch__input" id="custom_switch" />
+              <span class="switch__circle"></span>
+            </label>
+            <span class="plans__period plans__period--yearly">yearly</span>
+          </div>
+        </div>
+
+        <div class="plans__breakdown">
+          <ul class="plans__list">
+            <li class="plan__card">
+              <h3 class="plan__title">Starter</h3>
+              <span class="plan__description">
+                Ideal for freelancers and contractors just starting out.
+              </span>
+              <div class="plan__price">
+                <span class="plan__price--dollar">$</span>
+                <span class="plan__price--price">24</span>
+                <div class="plan__price--month">/month</div>
+              </div>
+              <ul class="plan__features">
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  All Templates
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Unlimited Clients & Projects
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Invoicing & Payments
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Proposals & Contracts
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Tasks & Time Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Client CRM
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Expense Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Up to 5 Project Collaborators
+                </li>
+              </ul>
+
+              <div class="plan__start">
+                <a href="/"> Start Free </a>
+              </div>
+            </li>
+
+            <li class="plan__card">
+              <h3 class="plan__title">Starter</h3>
+              <span class="plan__description">
+                Ideal for freelancers and contractors just starting out.
+              </span>
+              <div class="plan__price">
+                <span class="plan__price--dollar">$</span>
+                <span class="plan__price--price">24</span>
+                <div class="plan__price--month">/month</div>
+              </div>
+              <ul class="plan__features">
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  All Templates
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Unlimited Clients & Projects
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Invoicing & Payments
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Proposals & Contracts
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Tasks & Time Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Client CRM
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Expense Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Up to 5 Project Collaborators
+                </li>
+              </ul>
+
+              <div class="plan__start">
+                <a href="/"> Start Free </a>
+              </div>
+            </li>
+
+            <li class="plan__card">
+              <h3 class="plan__title">Starter</h3>
+              <span class="plan__description">
+                Ideal for freelancers and contractors just starting out.
+              </span>
+              <div class="plan__price">
+                <span class="plan__price--dollar">$</span>
+                <span class="plan__price--price">24</span>
+                <div class="plan__price--month">/month</div>
+              </div>
+              <ul class="plan__features">
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  All Templates
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Unlimited Clients & Projects
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Invoicing & Payments
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Proposals & Contracts
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Tasks & Time Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Client CRM
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Expense Tracking
+                </li>
+                <li class="plan__feature">
+                  <i class="fa-solid fa-check"></i>
+                  Up to 5 Project Collaborators
+                </li>
+              </ul>
+
+              <div class="plan__start">
+                <a href="/"> Start Free </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="plan__addon container">
+          <h2 class="plan__addon_subtitle">
+            Super charge your work with add-ons
+          </h2>
+          <ul class="plan__addon_options">
+            <li class="plan__addon_option">
+              <div class="plan__addon_option--left">
+                <h4 class="plan__addon_title">Partners</h4>
+                <p class="plan_addon_description">
+                  Invite other users to specific projects for limited access and
+                  functionality.
+                </p>
+              </div>
+              <div class="plan__addon_option--right">
+                <h3 class="plan__addon_price">Free</h3>
+              </div>
+            </li>
+
+            <li class="plan__addon_option">
+              <div class="plan__addon_option--left">
+                <h4 class="plan__addon_title">Collaborators</h4>
+                <p class="plan_addon_description">
+                  Invite other users to specific projects for limited access and
+                  functionality.
+                </p>
+              </div>
+              <div class="plan__addon_option--right">
+                <h3 class="plan__addon_price">$9</h3>
+                <span class="plan__addon_period">/month</span>
+              </div>
+            </li>
+
+            <li class="plan__addon_option">
+              <div class="plan__addon_option--left">
+                <h4 class="plan__addon_title">Bonsai Tax</h4>
+                <p class="plan_addon_description">
+                  Track expenses, identify write-offs, and estimate quarterly
+                  taxes easily.
+                </p>
+                <a
+                  class="plan__addon_more"
+                  href="
+        /"
+                  >Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="plan__addon_option--right">
+                <h3 class="plan__addon_price">$10</h3>
+                <span class="plan__addon_period">/month</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="plan__cta">
+          <p class="plan__cta__text">
+            It’s your business. We’re here to help it grow.
+          </p>
+          <button class="plan__cta__start">Start free</button>
+        </div>
+
+        <div class="plan__faq container">
+          <h2 class="plan__faq__title">Frequently Asked Questions</h2>
+          <ul class="plan__faq__list">
+            <li class="plan__faq__item">
+              <h2 class="plan__faq__text">
+                <button class="plan__faq__trigger" aria-expanded="false">
+                  How does the free trial work?
+                </button>
+                <i class="fa-solid fa-arrow-down"></i>
+              </h2>
+              <div class="plan__faq__content" hidden>
+                <p>
+                  When you start your trial with Bonsai you'll receive full,
+                  unlimited access to all of Bonsai's Workflow or Workflow Plus
+                  Features! You will need to enter your credit card information
+                  to begin your trial, but don't worry - we won't charge you
+                  anything until the subscription ends! If you wish to cancel at
+                  any time during the trial period, you can do so through your
+                  Subscriptions Settings Page.
+                </p>
+              </div>
+            </li>
+
+            <li class="plan__faq__item">
+              <h2 class="plan__faq__text">
+                <button class="plan__faq__trigger" aria-expanded="false">
+                  Can I change plans anytime?
+                </button>
+                <i class="fa-solid fa-arrow-down"></i>
+              </h2>
+              <div class="plan__faq__content" hidden>
+                <p>
+                  Yes, you can from within your account. If you have already
+                  subscribed to a plan, or want to downgrade or upgrade your
+                  current one, you can do this by going to your "Settings" and
+                  "Subscription".
+                </p>
+              </div>
+            </li>
+
+            <li class="plan__faq__item">
+              <h2 class="plan__faq__text">
+                <button class="plan__faq__trigger" aria-expanded="false">
+                  How do I pause my Bonsai subscription?
+                </button>
+                <i class="fa-solid fa-arrow-down"></i>
+              </h2>
+              <div class="plan__faq__content" hidden>
+                <p>
+                  We totally understand that with the nature of freelancing,
+                  work ebbs and flows so you might not always need your Bonsai
+                  subscription to remain active! The good news is that you can
+                  cancel or pause your monthly subscription at any time without
+                  penalty. Once cancelled, you'll be able to continue logging in
+                  to access all your documents and even continue to use our free
+                  features, like Time Tracking! In order to cancel your
+                  subscription, login to your Bonsai account
+                </p>
+              </div>
+            </li>
+
+            <li class="plan__faq__item">
+              <h2 class="plan__faq__text">
+                <button class="plan__faq__trigger" aria-expanded="false">
+                  What is your refund policy?
+                </button>
+                <i class="fa-solid fa-arrow-down"></i>
+              </h2>
+              <div class="plan__faq__content" hidden>
+                <p>
+                  If you contact us within 2 weeks of being charged for your
+                  subscription, we will be happy to issue a refund for
+                  you!Beyond those 2 weeks, you will need to cancel or modify
+                  the subscription from the Subscriptions Tab in Settings to
+                  avoid future charges, but refunds will not be issued. This
+                  applies to both monthly and annual plans.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__content">
+        <div class="footer__block">
+          <h2 class="footer__block__title">PRODUCT</h2>
+
+          <div class="footer__block__section">
+            <ul class="footer__block__links">
+              <li class="footer__link">Proposals</li>
+              <li class="footer__link">Contracts</li>
+              <li class="footer__link">Invoicing</li>
+              <li class="footer__link">Client CRM</li>
+              <li class="footer__link">Time Tracking</li>
+              <li class="footer__link">Task Tracking</li>
+              <li class="footer__link">Forms</li>
+              <li class="footer__link">Accounting</li>
+              <li class="footer__link">Bonsai Tax</li>
+              <li class="footer__link">Bonsai Cash</li>
+            </ul>
+          </div>
+
+          <div class="footer__block__section">
+            <h3 class="footer__block__subtitle">Pricing</h2>
+            <ul class="footer__block__links">
+              <li class="footer__link">Bonsai Reviews</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__block">
+          <h2 class="footer__block__title">FREE RESOURCES</h2>
+
+          <div class="footer__block__section">
+            <ul class="footer__block__links">
+              <li class="footer__link">Freelance Resources</li>
+              <li class="footer__link">Freelance Blog by Bonsai</li>
+              <li class="footer__link">How to Write a Contract</li>
+              <li class="footer__link">Online Signature Maker</li>
+              <li class="footer__link footer__link--spaced">Self-Employed Taxes Hub</li>
+              <li class="footer__link">Self-Employed Tax Calculator</li>
+              <li class="footer__link">Self Employed Tax Deductions</li>
+            </ul>
+          </div>
+
+          <div class="footer__block__section">
+            <h2 class="footer__block__subtitle">Templates</h2>
+            <ul class="footer__block__links">
+              <li class="footer__link">
+		      <button class="footer__link__expandable" aria-expanded="false">
+				Invoice Templates 
+				<i class="fa-solid fa-chevron-down"></i>
+		      </button>
+		      <div class="footer__link__expandable_content">
+			      <ul class="footer__block__links">
+				      <li class="footer__link">Invoice Generator</li>
+				      <li class="footer__link">Blank Invoice Template</li>
+				      <li class="footer__link">Consultant Invoice Template</li>
+				      <li class="footer__link">Editable Invoice Template</li>
+				      <li class="footer__link--spaced">Graphic Design Invoice</li>
+				      <li class="footer__link">Web Design Invoice</li>
+				      <li class="footer__link">Contractor Invoice Template</li>
+			      </ul> 	
+		      </div>
+	      </li>
+
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="footer__block">
+          <h2 class="footer__block__title">BONSAI</h2>
+
+          <div class="footer__block__section">
+            <ul class="footer__block__links">
+              <li class="footer__link">About</li>
+              <li class="footer__link">Carreers</li>
+              <li class="footer__link">Support</li>
+              <li class="footer__link">LinkedIn</li>
+              <li class="footer__link">Twitter</li>
+              <li class="footer__link">Privacy policy</li>
+              <li class="footer__link">Legal</li>
+
+              <li class="footer__link--spaced">Affiliates</li>
+              <li class="footer__link">Write for Us </li>
+
+              <li class="footer__link--spaced">
+		      <button class="footer__link__expandable" aria-expanded="false">
+				Comparisons
+				<i class="fa-solid fa-chevron-down"></i>
+		      </button>
+		      <div class="footer__link__expandable_content">
+			      <ul class="footer__block__links">
+				      <li class="footer__link">Invoice Generator</li>
+				      <li class="footer__link">Blank Invoice Template</li>
+				      <li class="footer__link">Consultant Invoice Template</li>
+				      <li class="footer__link">Editable Invoice Template</li>
+				      <li class="footer__link--spaced">Graphic Design Invoice</li>
+				      <li class="footer__link">Web Design Invoice</li>
+				      <li class="footer__link">Contractor Invoice Template</li>
+			      </ul> 	
+		      </div>
+	      </li>
+            </ul>
+          </div>
+	</div>
+
+
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
